@@ -15,9 +15,9 @@
 <body>
     <div class="container">
         <header class="header_container">
-            <section class="header_content" id="logo_sect">
+            <!--<section class="header_content" id="logo_sect">
                 <img class="logo" src="images/borsch_logo1.png" alt="borsch logo">
-            </section>
+            </section>-->
             <section class="header_content" id="name_sect">
                 <h1 class="my_name">Taisia Simakova</h1>
             </section>
@@ -35,12 +35,19 @@
         <main class="main_container">
             <!-- ToDo-->
             <div class="">
-                <img src="images/photo1.jpg" alt="" class="rounded-circle photo">
+                <img src="images/tmp/photo2_medium.jpg" class="rounded-circle photo" alt="Photo"
+                srcset="images/tmp/photo2_small.jpg 500w,
+                        images/tmp/photo2_medium.jpg 1000w,
+                        images/tmp/photo2_large.jpg 1800w" 
+                        sizes = "(min-width: 1001px) 1800px,
+                         (min-width: 501px) and (max-width: 1000px) 1000px,
+                         (max-width: 500px) 500px">
+                
             </div>
         </main>
         <footer class="footer_container">
             <!-- ToDo-->
-            <p class="p_foot">stipaxa group 2018</p>
+            <p class="p_foot">designed and created by Taisia Simakova 2018</p>
         </footer>
     </div>
 </body>
