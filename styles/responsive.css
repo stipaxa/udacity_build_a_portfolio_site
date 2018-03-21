@@ -2,13 +2,14 @@
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+/* Small screens */
+@media screen and (max-width: 580px) {
     .p_foot {
         font-size: 1em;
     }
     .header_name {
         margin-left: 0;
-        font-size: 2em;
+        font-size: 3em;
         vertical-align: bottom; 
     }
     .header_menu {
@@ -19,7 +20,7 @@
     }
     .header_menu svg {
         width: 32px;
-        fill: #f3b029;
+        fill: #6d6b5c;
     }
     .nav {
         z-index: 10;
@@ -41,7 +42,7 @@
     }
     .nav_item {
         display: list-item;
-        width: 100%;
+        /* width: 100%; */
         text-align: left;
         list-style-type: none;
     }
@@ -49,4 +50,9 @@
         padding: 5% 10%;
         background-color: rgba(255, 255, 255, 0.9);
     }
-} 
+}
+
+/* Large screens */
+@media all and (min-width: 768px) {
+
+}
