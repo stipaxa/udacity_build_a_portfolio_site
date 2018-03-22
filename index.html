@@ -26,7 +26,7 @@
             </a>
             <nav id="drawer" class="nav"> 
                 <ul class="nav_list">
-                    <li class="nav_item"><a class="active" href="">Home</a></li>
+                    <li class="nav_item"><a href="#">Home</a></li>
                     <li class="nav_item"><a href="#about">About</a></li>
                     <li class="nav_item"><a href="#projects">Projects</a></li>
                     <li class="nav_item"><a href="#contact">Contact</a></li>
@@ -36,9 +36,8 @@
         <main class="main_container">
             <section class="main_photo">
                 <img src="images/photo2_large.jpg" class="rounded-circle photo" alt="Photo"
-                sizes="(max-width: 500px) 500px, (min-width: 769px) 1800px,
-                       (min-width: 501px) and (max-width: 768px) 1000px"
-                srcset="images/photo2_small.jpg 500w, images/photo2_medium.jpg 768w, images/photo2_large.jpg 1800w">
+                sizes="(max-width: 360px) 360px, (min-width: 769px) 1800px, (min-width: 361px) and (max-width: 768px) 768px"
+                srcset="images/photo2_small.jpg 360w, images/photo2_medium.jpg 768w, images/photo2_large.jpg 1800w">
             </section>
             <section class="personal_qualities">
                 <h2 class="main_name">Taisia Simakova</h2>
@@ -49,28 +48,35 @@
                     HTML CSS JavaScript JQuery
                 </div>
             </section>
-            <!-- Projects gallery grid -->
-            <div class="row">
-                <div class="column">
-                    <div class="content">
-                        <img src="images/animal_card.png" class="img_content" alt="Animal card project">
-                        <h3>Animal Card Project</h3>
+            <!-- Projects grid -->
+            <section class="projects">
+                <h4 class="last_projects">My projects</h4>
+                <div class="project_item" id="pixel_art">
+                    <div class="project_content">
+                        <img src="images/pixel_art2.png" class="project_img" alt="Pixel art project"
+                        sizes="(max-width: 360px) 360px, (min-width: 769px) 1800px, (min-width: 361px) and (max-width: 768px) 768px"
+                        srcset="images/pixel_art2_small.png 360w, images/pixel_art2_medium.png 768w, images/pixel_art2.png 1800w">
+                        <h3 class="project_head">Pixel Art</h3>
                     </div>
                 </div>
-                <div class="column">
-                    <div class="content">
-                        <img src="images/pixel_art1.png" class="img_content" alt="Pixel art project">
-                        <h3>Pixel Art Project</h3>
+                <div class="project_item" id="animal_card">
+                    <div class="project_content">
+                        <img src="images/loch_ness3_white.png" class="project_img" alt="Animal card project"
+                        sizes="(max-width: 360px) 360px, (min-width: 769px) 1800px, (min-width: 361px) and (max-width: 768px) 768px"
+                        srcset="images/loch_ness3_small_white.png 360w, images/loch_ness3_medium_white.png 768w, images/loch_ness3_white.png 1800w">
+                        <h3 class="project_head">Animal Card</h3>
                     </div>
                 </div>
-                <div class="column">
-                    <div class="content">
-                        <img src="images/borsch_logo1.png" class="img_content" alt="Borsch project">
-                        <h3>My Borsch Project</h3>
+                <div class="project_item" id="borsch">
+                    <div class="project_content">
+                        <img src="images/borsch_logo2.png" class="project_img" alt="Borsch project"
+                        sizes="(max-width: 360px) 360px, (min-width: 769px) 1800px, (min-width: 361px) and (max-width: 768px) 768px"
+                        srcset="images/borsch_logo2_small.png 360w, images/borsch_logo2_medium.png 768w, images/borsch_logo2.png 1800w">
+                        <h3 class="project_head">Borsch</h3>
                     </div>
                 </div>
             <!-- End grid -->
-            </div>
+            </section>
         </main>
         <footer class="footer_container">
             <!-- ToDo-->

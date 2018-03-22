@@ -30,8 +30,8 @@ header, nav, footer, section, article, div {
 
 .container {
     display: flex;
-    flex-direction: column;
-    /* flex-flow: row wrap; */
+    /* flex-direction: column; */
+    flex-flow: row wrap;
     max-width: 1000px;
     margin: auto;
     padding-left: 0px;
@@ -109,14 +109,12 @@ header, nav, footer, section, article, div {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    /* justify-content: space-between; */
-    justify-content: center;
+    justify-content: space-around;
     border-top: 2px solid #6d6b5c;
     background-color: #f2f1ed;
     color: #6d6b5c;
-    padding: 1rem;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
     font-family: 'Open Sans', sans-serif; 
 }
 
@@ -131,6 +129,10 @@ header, nav, footer, section, article, div {
     font-weight: normal;
 }
 
+.p_main {
+    text-align: justify;
+}
+
 .highlight_experience {
     font-family: 'Trocchi', serif;
     font-size: 1.5rem;
@@ -141,65 +143,78 @@ header, nav, footer, section, article, div {
 
 .personal_qualities {
     width: 50%;
-    margin-left: auto;
     margin-bottom: 0;
     border-bottom: #c4c3bc 1px solid;
 }
 
 .experience_list {
+    font-size: 1rem;
+    font-weight: normal;
     word-spacing: 30px;
+    padding-bottom: 0.2rem;
 }
 
 /*
  *
- * Projects gallery grid
+ * Projects grid
  * 
  */
-.row {
+.projects {
     margin: 8px -16px;
+    text-align: center;
 }
-
-.img_content {
-    width: 100%;
-}
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-    padding: 8px;
-}
-
-/* Create four equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 25%;
-}
-
-/* Clear floats after rows */ 
-.row:after {
+.projects:after {
     content: "";
     display: table;
     clear: both;
 }
 
-/* Content */
-.content {
-    background-color: white;
+.last_projects {
+    font-family: 'Trocchi', serif;
+    text-transform: uppercase;
+    font-size: 2vw;
+    color: #6d6b5c;
+    font-weight: 500;
+    text-decoration: none;
+    padding-bottom: 1rem;
+}
+
+.project_img {
+    width: 100%;
+}
+
+.projects,
+.projects > .project_item {
     padding: 10px;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-    .column {
+.project_item {
+    display: inline-block;
+    width: 25%;
+    box-shadow: 3px 3px 10px #888888;
+}
+
+.project_head {
+    font-size: 1rem;
+}
+
+.project_content {
+    background-color: #fff;
+    padding: 10px;
+}
+
+/*@media screen and (max-width: 900px) {
+    .project_item {
         width: 50%;
     }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-    .column {
+    .project_item {
         width: 100%;
-    }
-}
+    } 
+}*/
+
 /*
  *
  * Footer
@@ -213,6 +228,7 @@ header, nav, footer, section, article, div {
     justify-content: space-around;
     background-color: #6d6b5c;
     color: #f2f1ed;
+    width: 100%;
 }
 
 .p_foot {
