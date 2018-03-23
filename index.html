@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/responsive.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -26,30 +27,30 @@
             </a>
             <nav id="drawer" class="nav"> 
                 <ul class="nav_list">
-                    <li class="nav_item"><a href="#">Home</a></li>
+                    <li class="nav_item"><a href="#home">Home</a></li>
                     <li class="nav_item"><a href="#about">About</a></li>
                     <li class="nav_item"><a href="#projects">Projects</a></li>
                     <li class="nav_item"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
-        <main class="main_container">
+        <main class="main_container" id="home">
             <section class="main_photo">
                 <img src="images/photo2_large.jpg" class="rounded-circle photo" alt="Photo"
                 sizes="(max-width: 360px) 360px, (min-width: 769px) 1800px, (min-width: 361px) and (max-width: 768px) 768px"
                 srcset="images/photo2_small.jpg 360w, images/photo2_medium.jpg 768w, images/photo2_large.jpg 1800w">
             </section>
-            <section class="personal_qualities">
+            <section class="personal_qualities" id="about">
                 <h2 class="main_name">Taisia Simakova</h2>
-                <p class="p_main">Results-driven IT engineer with 7+ years of experience in software for banks and other credit organisations.<br>
-                In present time developing my own full stack web application in order to learn Python and Networking, JavaScript and HTML/CSS and testing.</p>
+                <p class="p_main">Results-driven IT engineer with 7+ years of experience in software for banks and other credit organisations.</p>
                 <h4 class="highlight_experience">Highlight of experience:</h4>
                 <div class="experience_list">
                     HTML CSS JavaScript JQuery
                 </div>
+                <p class="p_main">In present time developing my own full stack web application in order to learn Python and Networking, JavaScript and HTML/CSS and testing.</p>
             </section>
             <!-- Projects grid -->
-            <section class="projects">
+            <section class="projects" id="projects">
                 <h4 class="last_projects">My projects</h4>
                 <div class="project_item" id="pixel_art">
                     <div class="project_content">
@@ -79,7 +80,17 @@
             </section>
         </main>
         <footer class="footer_container">
-            <!-- ToDo-->
+            <div class="social" id="contact">
+                <a href="https://www.linkedin.com/in/taisia-simakova-22015b79/" target="_blank" class="social_link">
+                    <img class="social_icon" src="images/linkedin_icon.png">
+                </a>
+                <a href="https://www.instagram.com/stipaxa/" class="social_link" target="_blank" class="social_link">
+                    <img class="social_icon" src="images/instagram_icon.png">
+                </a>
+                <a href="https://www.facebook.com/stipaxa" class="social_link" target="_blank" class="social_link">
+                    <img class="social_icon" src="images/facebook_icon.png">
+                </a>
+            </div>
             <p class="p_foot">designed and created by Taisia Simakova 2018</p>
         </footer>
     </div>

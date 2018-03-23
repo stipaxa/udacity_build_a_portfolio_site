@@ -8,7 +8,7 @@
         font-size: 1em;
     }
     .header_name {
-        font-size: 2em;
+        font-size: 2.5rem;
         order: -1;
     }
     .header_menu {
@@ -24,30 +24,23 @@
     }
     .nav {
         z-index: 10;
-        /* background-color: #fff; */
-        width: -150px;
+        background-color: #fff;
+        width: 300px;
         position: absolute;
-        -webkit-transform: translate(-300px, 0);
-        transform: translate(-300px, 0);
+        -webkit-transform: translate(-350px, 0);
+        transform: translate(-350px, 0);
         transition: transform 0.5s ease;
+        display: block;
     }
     .nav.open {
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0);
-        margin-top: 1.2em;
-    }
-    .nav_list{
-        width: 100%;
-        position: fixed;
+        margin-top: 6.8rem; 
     }
     .nav_item {
-        display: list-item;
         text-align: left;
         list-style-type: none;
-    }
-    .nav a {
-        padding: 5% 10%;
-        background-color: rgba(255, 255, 255, 0.9);
+        border-bottom: #c4c3bc 1px solid;
     }
     .main_photo {
         text-align: center;
@@ -55,40 +48,40 @@
         order: 2;
     }
     .main_name {
-        text-align: center;
-        font-size: 1.5rem;
+        text-align: left;
+        font-size: 2rem;
     }
     .personal_qualities {
         width: 100%;
         order: 3;
     }
-   
+    .projects{
+        order: 4;
+    }
+    
     .last_projects{
         padding-top: 1rem;
         font-size: 1rem;
         width: 100%;
         text-align: center;
-        order: 4;
+        order: 1;
     } 
     .project_head{
         font-size: 0.8rem;
     }
     .project_item{
         padding: 3px;
+        text-align: center;
+        width: 50%;
     }
     #pixel_art{
-        text-align: center;
-        order: 5;
+        order: 2;
     }
     #animal_card{
-        text-align: center;
-        order: 6;
+        order: 3;
     }
     #borsch{
-        /* width: 100%; */
-        /* float: left; */
-        text-align: center;
-        order: 7;
+        order: 4;
     }
 
     .footer_container{
@@ -96,6 +89,7 @@
     }
 }
 
+/* Medium screens */
 @media all and (min-width: 369px) and (max-width: 760px) {
     .header_name {
         font-size: 3rem;

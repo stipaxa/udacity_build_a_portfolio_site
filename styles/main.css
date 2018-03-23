@@ -28,6 +28,11 @@ header, nav, footer, section, article, div {
     box-sizing: border-box;
 } 
 
+:target {
+    animation: highlight 20s ease;  
+    transform: translateX(20px);     
+}
+
 .container {
     display: flex;
     /* flex-direction: column; */
@@ -63,40 +68,37 @@ header, nav, footer, section, article, div {
     margin-right: auto;
 }
 
-.header_content {
-    background: #FFF;
-    text-align: center;
-}
-
 .nav {
+    margin-right: auto;
     margin-left: auto;
+    width: 100%;
 }
 
 .nav_list {
+    width: 100%;
     padding: 0;
     margin: 0;
 }
 
 .nav_item {
     box-sizing: border-box;
-    display: inline-block;
+    line-height: 24px;
+    padding: 0.5rem;
     text-align: center;
+    border-bottom: #c4c3bc 1px solid;
 }
 
 .nav a {
-    background-color: rgba(255, 255, 255, 0.9);
     text-transform: uppercase;
-    font-size: 2vw;
+    font-size: 1rem;;
     color: #6d6b5c;
     font-weight: 500;
     text-decoration: none;
     text-align: center;
-    display: block;
-    padding: 1rem;
 }
 
 .nav a:hover {
-    background-color: #cfccbb;
+    text-decoration: underline;
 }
 
 /*
@@ -144,14 +146,14 @@ header, nav, footer, section, article, div {
 .personal_qualities {
     width: 50%;
     margin-bottom: 0;
-    border-bottom: #c4c3bc 1px solid;
 }
 
 .experience_list {
     font-size: 1rem;
     font-weight: normal;
     word-spacing: 30px;
-    padding-bottom: 0.2rem;
+    margin-bottom: 1rem;
+    border-bottom: #c4c3bc 1px solid;
 }
 
 /*
@@ -196,24 +198,13 @@ header, nav, footer, section, article, div {
 
 .project_head {
     font-size: 1rem;
+    font-family: 'Verdana', sans-serif;
 }
 
 .project_content {
     background-color: #fff;
     padding: 10px;
 }
-
-/*@media screen and (max-width: 900px) {
-    .project_item {
-        width: 50%;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .project_item {
-        width: 100%;
-    } 
-}*/
 
 /*
  *
@@ -229,11 +220,26 @@ header, nav, footer, section, article, div {
     background-color: #6d6b5c;
     color: #f2f1ed;
     width: 100%;
+    padding: 0.5rem;
+}
+
+.social{
+    text-align: center;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.social_link{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.social_icon{
+    width: 30px;
 }
 
 .p_foot {
     font-family: 'Open Sans', sans-serif; 
     font-size: 15px; 
-    padding: 0.3em;
     margin: 0;
 }
