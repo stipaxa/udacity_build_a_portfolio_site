@@ -4,7 +4,9 @@
  * 
  */
 
-body, html, main {
+body, 
+html, 
+main {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -16,11 +18,24 @@ body {
     color: #3f3e36;
 }
 
-h1, h2, h3, h4, h5 {
+h1, 
+h2, 
+h3, 
+h4, 
+h5 {
     margin: 0; 
 }
 
-header, nav, footer, section, article, div {
+ul {
+    list-style: none;
+}
+
+header, 
+nav, 
+footer, 
+section, 
+article, 
+div {
     box-sizing: border-box;
 }
 
@@ -35,12 +50,11 @@ header, nav, footer, section, article, div {
 
 .container {
     display: flex;
-    /* flex-direction: column; */
     flex-flow: row wrap;
     max-width: 1000px;
     margin: auto;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /*
@@ -66,12 +80,12 @@ header, nav, footer, section, article, div {
     font-size: 5.9vw;
     font-weight: normal;
     margin-right: auto;
+    margin-left: auto;
 }
 
 .nav {
     margin-right: auto;
     margin-left: auto;
-    width: 100%;
 }
 
 .nav_list {
@@ -83,9 +97,8 @@ header, nav, footer, section, article, div {
 .nav_item {
     box-sizing: border-box;
     line-height: 24px;
-    padding: 0.5rem;
+    padding: 0.8rem;
     text-align: center;
-    border-bottom: #c4c3bc 1px solid;
 }
 
 .nav a {
@@ -144,7 +157,6 @@ header, nav, footer, section, article, div {
 }
 
 .personal_qualities {
-    width: 50%;
     margin-bottom: 0;
 }
 
@@ -174,7 +186,7 @@ header, nav, footer, section, article, div {
 .last_projects {
     font-family: 'Trocchi', serif;
     text-transform: uppercase;
-    font-size: 2vw;
+    font-size: 1.7em;
     color: #6d6b5c;
     font-weight: 500;
     text-decoration: none;
@@ -197,7 +209,7 @@ header, nav, footer, section, article, div {
 }
 
 .project_head {
-    font-size: 1rem;
+    font-size: 1em;
     font-family: 'Verdana', sans-serif;
 }
 
@@ -223,18 +235,18 @@ header, nav, footer, section, article, div {
     padding: 0.5rem;
 }
 
-.social{
+.social {
     text-align: center;
     width: 100%;
     margin-top: 5px;
 }
 
-.social_link{
+.social_link {
     padding-left: 15px;
     padding-right: 15px;
 }
 
-.social_icon{
+.social_icon {
     width: 30px;
 }
 
